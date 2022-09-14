@@ -1,0 +1,23 @@
+let a = Math.floor((Math.random() * 100) + 1);
+
+let guess = 0;
+let userguess = null
+userguess = parseInt(prompt("enter you guess - "))
+guess++
+
+while (userguess != a) {
+
+  if (userguess < a) {
+    console.log("try larger number ")
+    userguess = parseInt(prompt("enter guess again "))
+
+  }
+  else if (userguess > a) {
+    console.log("try smaller number ")
+    userguess = parseInt(prompt("enter guess again "))
+  }
+  guess++
+}
+
+console.log("\nCongratulations🥳🥳 ")
+console.log(`you guessed the number in ${guess} guess `)
